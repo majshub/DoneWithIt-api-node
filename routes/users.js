@@ -4,11 +4,11 @@ const Joi = require("joi");
 const usersStore = require("../store/users");
 const validateWith = require("../middleware/validation");
 
-const schema = {
+const schema = Joi.object({
   name: Joi.string().required().min(2),
   email: Joi.string().email().required(),
   password: Joi.string().required().min(5),
-};
+});
 
 router.post("/", validateWith(schema), (req, res) => {
   const { name, email, password } = req.body;
