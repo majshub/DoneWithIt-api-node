@@ -1,5 +1,3 @@
-Got it! Here’s an updated version of the README file that reflects the need to use the local IP address instead of `localhost`.
-
 ---
 
 # Done With It API (Node.js)
@@ -75,11 +73,6 @@ Before starting the server, you need to configure the `assetsBaseUrl` in `config
 
    Open your browser or use a tool like [Postman](https://www.postman.com/) to access `http://<YOUR_LOCAL_IP>:9000` and check if the server is responding.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 For any issues or contributions, please open an issue or submit a pull request on this repository.
 
