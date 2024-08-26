@@ -10,10 +10,10 @@ const sendPushNotification = require("../utilities/pushNotifications");
 const auth = require("../middleware/auth");
 const validateWith = require("../middleware/validation");
 
-const schema = {
+const schema = Joi.object({
   listingId: Joi.number().required(),
   message: Joi.string().required(),
-};
+});
 
 router.get("/", auth, (req, res) => {
   const messages = messagesStore.getMessagesForUser(req.user.userId);
